@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 TARGET_DIR="${HOME}/.claude/commands"
-CATEGORIES=("understand" "build" "ship" "design" "audit")
+CATEGORIES=("understand" "build" "ship" "design" "audit" "meta")
 
 usage() {
     echo "Usage: install.sh [OPTIONS]"

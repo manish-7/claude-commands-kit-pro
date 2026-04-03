@@ -94,6 +94,24 @@ Commands are designed to compose. The output of one command serves as natural in
 3. **`/test`** — Ensure refactors don't break anything
 4. **`/pr`** — Ship with clear before/after context
 
+## Any Non-Trivial Task (Meta Workflow)
+
+```
+/plan → /implement → /verify → /lessons
+```
+
+1. **`/plan`** — Break the task into checkable steps in `tasks/todo.md`
+2. **`/implement`** — Build step by step, marking items complete as you go
+3. **`/verify`** — Prove the work is correct before calling it done
+4. **`/lessons`** — Record any corrections or patterns learned
+
+Use this as a wrapper around any other workflow. For example:
+
+```
+/plan → [Bug Fix workflow] → /verify → /lessons
+/plan → [New Feature workflow] → /verify → /lessons
+```
+
 ## Tips
 
 - You don't have to run the full workflow — start at any step

@@ -71,6 +71,22 @@ A curated, production-grade collection of custom commands for [Claude Code](http
 | `/coverage` | Analyze test coverage gaps and suggest tests | read-only |
 | `/release` | Pre-release checklist and validation | read-only |
 
+### Meta — Workflow orchestration and self-improvement
+
+| Command | Description | Scope |
+|---------|-------------|-------|
+| `/plan` | Create a structured plan with checkable items in `tasks/todo.md` | modifies-files |
+| `/verify` | Verify completed work meets quality standards before calling it done | read-only |
+| `/lessons` | Record and review lessons learned from corrections | modifies-files |
+
+## CLAUDE.md Template
+
+Drop the included [CLAUDE.md template](templates/CLAUDE.md) into your project root for a ready-to-use project config with workflow orchestration rules, task management patterns, and core principles. Pair it with the commands for best results.
+
+```bash
+cp templates/CLAUDE.md /path/to/your/project/CLAUDE.md
+```
+
 ## Install
 
 ```bash

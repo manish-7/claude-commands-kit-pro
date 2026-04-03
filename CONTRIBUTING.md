@@ -71,6 +71,7 @@ Place your command in the right category:
 | `ship/` | Committing, reviewing, deploying |
 | `design/` | Planning, architecting, specifying |
 | `audit/` | Assessing quality, security, coverage |
+| `meta/` | Workflow orchestration, self-improvement, task management |
 
 If your command doesn't fit, propose a new category in the PR description.
 
