@@ -2,16 +2,38 @@
 
 A curated, production-grade collection of custom commands for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Built for real workflows — composable, validated, and easy to install.
 
-## What's Different
+## Features
 
-| Feature | Other Repos | This Kit |
-|---------|-------------|----------|
-| Scope metadata | No | `scope: read-only \| modifies-files \| creates-commits \| pushes` |
-| Composability | Hinted | Documented workflows with input/output contracts |
-| Validation | None | `validate.sh` enforces template structure |
-| Install/Update | Manual copy | One-liner install script |
-| Examples | None | [Sample input/output](examples/) per category |
-| Contribution guide | None | Checklist + review criteria |
+- **Scope metadata** — Every command declares `read-only`, `modifies-files`, `creates-commits`, or `pushes` so you know the impact before running
+- **Composable workflows** — Documented [pipelines](workflows/README.md) with input/output contracts showing how commands chain together
+- **Validated structure** — `validate.sh` enforces frontmatter, section order, and line limits across all commands
+- **One-liner install** — `install.sh` with symlink support, category filtering, and easy updates
+- **Examples included** — [Sample input/output](examples/) for each category showing real-world usage
+- **Contribution ready** — Quality checklist, command template, and review criteria in [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Example: `/review`
+
+Run `/commands:ship:review PR #247` and get:
+
+```
+Review: PR #247 — Add user preferences API
+
+Blocker — src/api/preferences.ts:34
+  SQL injection via string interpolation in query.
+  Fix: Use parameterized query with $1 placeholder.
+
+Major — src/services/PreferenceService.ts:52
+  No authorization check — any user can read/write any other user's preferences.
+  Fix: Add requestingUserId !== targetUserId guard.
+
+Minor — src/api/preferences.ts:18
+  Missing input validation on PATCH — accepts arbitrary keys.
+  Fix: Validate against allowlist of known preference keys.
+
+Summary: Not ready to merge. 1 blocker and 1 major must be fixed.
+```
+
+See more [examples](examples/) for every category.
 
 ## Commands
 
