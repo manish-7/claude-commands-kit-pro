@@ -10,7 +10,7 @@ A curated, production-grade collection of custom commands for [Claude Code](http
 | Composability | Hinted | Documented workflows with input/output contracts |
 | Validation | None | `validate.sh` enforces template structure |
 | Install/Update | Manual copy | One-liner install script |
-| Examples | None | Sample input/output per command |
+| Examples | None | [Sample input/output](examples/) per category |
 | Contribution guide | None | Checklist + review criteria |
 
 ## Commands
