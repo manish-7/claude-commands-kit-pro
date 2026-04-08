@@ -81,6 +81,7 @@ See more [examples](examples/) for every category.
 | `/migration` | Plan a data or system migration | read-only |
 | `/schema` | Design or review a database schema | read-only |
 | `/ci` | Design or fix CI/CD pipelines | modifies-files |
+| `/prd` | Write a Product Requirements Document from a feature idea | read-only |
 
 ### Audit — Assess and improve quality
 
