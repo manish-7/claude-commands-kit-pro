@@ -82,6 +82,7 @@ See more [examples](examples/) for every category.
 | `/schema` | Design or review a database schema | read-only |
 | `/ci` | Design or fix CI/CD pipelines | modifies-files |
 | `/prd` | Write a Product Requirements Document from a feature idea | read-only |
+| `/ideate` | Brainstorm options with pros, cons, effort, risk, and a recommendation | read-only |
 
 ### Audit — Assess and improve quality
 
